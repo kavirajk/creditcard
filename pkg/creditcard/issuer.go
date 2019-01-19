@@ -9,9 +9,10 @@ type issuer func(num string) bool
 
 var (
 	issuers = map[string]issuer{
-		"American-Express": AmericanExpress,
-		"Visa":             Visa,
-		"MasterCard":       MasterCard,
+		"American-Express":         AmericanExpress,
+		"Visa":                     Visa,
+		"MasterCard":               MasterCard,
+		"DinersClub-International": DinersClubInternational,
 	}
 )
 
@@ -31,7 +32,7 @@ func CISS(num string) bool {
 	return strings.HasPrefix(num, "686566")
 }
 
-func DinersClubInternationl(num string) bool {
+func DinersClubInternational(num string) bool {
 	if strings.HasPrefix(num, "36") || strings.HasPrefix(num, "3095") || strings.HasPrefix(num, "38") || strings.HasPrefix(num, "39") {
 		return true
 	}
