@@ -34,7 +34,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/kavirajk/go-creditcard/pkg/creditcard"
+	"github.com/kavirajk/creditcard/pkg/creditcard"
 )
 
 func main() {
